@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to ...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+BODY { behavior:url("js/csshover.htc");}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+
+<script type="text/javascript" src="js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/ui/jquery.ui.datepicker.js"></script>
+<link rel="stylesheet" href="js/themes/base/jquery.ui.all.css" />
+<script>
+	$(function() {
+		$( "#datepicker1" ).datepicker();
+		$( "#datepicker2" ).datepicker();
+	});
+</script>
+<script type="text/javascript" src="js/my_script.js"></script>
+</head>
+<body>
+<div class="main-container">
+<!-- Header -->
+<div class="header">
+	<div class="logo"><a href="#"><img src="images/logo.png" alt="#" /></a></div>
+	<div class="user-box-cabinet">
+		<div class="user-img"><img src="images/ava01.jpg" width="41" height="41" /></div>
+		<div class="user-name">Чернышев Александр</div>
+		<div class="user-menu"><a href="#">Профиль</a> <span>|</span> <a href="#">Выход</a></div>
+		<div class="user-drop">
+			<em></em>
+			<ul>
+				<li><a href="#">Регистрация подажи</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">Сообщение в службу поддержки</a></li>
+				<li class="exit"><img src="images/ico01_.png"  alt="#" /> <a href="#">Выход</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mmenu">
+		<ul>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Форум</a></li>
+			<li><a href="#">Поддержка</a></li>
+			<li><a href="#">Материалы</a></li>
+			<li><a href="#">Новости и акции</a></li>
+		</ul>
+	</div>
+</div>
+<!-- /Header -->
+<!-- Content -->
+<div class="content">
+	<div class="leftbar">
+	<div class="left-menu">
+		<ul>
+			<li><a href="#">Заявки на регистрацию</a></li>
+			<li><a href="#">Регистрации продаж</a></li>
+			<li><a href="#">Список пользователей</a></li>
+			<li><a href="#">Заявки на поддержку</a></li>
+			<li class="act"><a href="#">Сообщения с обратной связи</a></li>
+			<li><a href="#">Личные сообщения</a></li>
+		</ul>
+	</div>
+	</div>
+	
+	<div  class="rightbar">
+		<div class="breadcrumbs"><a href="/">Ricoh</a> <span>//</span> <a href="#">Личный кабинет</a> <span>//</span> Сообщения с обратной связи</div>
+		<h1>Сообщения с обратной связи </h1>
+		
+		<div class="search-filter">
+			<form action="" method="">
+			<div class="line">
+			<label>Не ранее</label> <input type="text" id="datepicker1"> 
+			<label>не позднее</label> <input type="text" id="datepicker2"> 
+			<input type="text" value="ФИО" class="styler in00" />
+			</div>
+			
+			<div class="line align-right">
+				<select>
+					<option>Статус заявок</option>
+					<option>1</option>
+				</select>
+				<input type="submit" value="Найти" class="styler" /> 
+			</div>
+			</form>
+		</div>		
+		
+		<div class="mess-list">
+			<table>
+				<tr>
+					<th class="first">Дата</th>
+					<th class="second">ФИО</th>
+					<th>e-mail	</th>
+					<th>Телефон  </th>
+					<th>Компания</th>
+					<th>Текст сообщения</th>
+					<th class="last">Действие</th>
+				</tr>
+				<tr class="read">
+					<td class="first">25.08.2013</td>
+					<td><div class="u-name"><a href="#">Игорь Агаларов</a></div></td>
+					<td><div class="mail"><a href="#">I@mail.ru</a></div></td>
+					<td>555 55 55</td>
+					<td>Рога и копыта</td>
+					<td>Здравствуйте, у меня воз </td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-1"><a class="answer-link" href="#">Ответить</a></div>
+								<div class="tools-2"><a class="view-link" href="#">Посмотреть текст ответа</a></div>
+								<div class="tools-3"><a href="#">Удалить</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="7">
+						<div class="u-name-drop">
+							<div class="line"><b>Название компании:</b>  "Рога и копыта"  <b>ИНН</b> 55599652</div>
+							<div class="line"><b>Адрес:</b> Преображенская ул. д.2. </div>
+							<div class="line"><b>Сфера деятельности:</b> Продажа товаров различного назначения</div>
+							<div class="line"><b>Должность:</b> менеджер   Телефон  555 55 55</div>
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr class="read">
+					<td class="first">25.08.2013</td>
+					<td><div class="u-name"><a href="#">Илья Табаев</a></div></td>
+					<td><div class="mail"><a href="#">tabaev@mail.ru</a></div></td>
+					<td>555 55 55</td>
+					<td>Рога и копыта</td>
+					<td>Здравствуйте, у меня воз </td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-1"><a class="answer-link" href="#">Ответить</a></div>
+								<div class="tools-2"><a class="view-link" href="#">Посмотреть текст ответа</a></div>
+								<div class="tools-3"><a href="#">Удалить</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="7">
+						<div class="u-name-drop">
+							<div class="line"><b>Название компании:</b>  "Рога и копыта"  <b>ИНН</b> 55599652</div>
+							<div class="line"><b>Адрес:</b> Преображенская ул. д.2. </div>
+							<div class="line"><b>Сфера деятельности:</b> Продажа товаров различного назначения</div>
+							<div class="line"><b>Должность:</b> менеджер   Телефон  555 55 55</div>
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="first">25.08.2013</td>
+					<td><div class="u-name"><a href="#">Владимир Рыва</a></div></td>
+					<td><div class="mail"><a href="#">tabaev@mail.ru</a></div></td>
+					<td>555 55 55</td>
+					<td>Рога и копыта</td>
+					<td>Здравствуйте, у меня воз </td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-1"><a class="answer-link" href="#">Ответить</a></div>
+								<div class="tools-2"><a class="view-link" href="#">Посмотреть текст ответа</a></div>
+								<div class="tools-3"><a href="#">Удалить</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="7">
+						<div class="u-name-drop">
+							<div class="line"><b>Название компании:</b>  "Рога и копыта"  <b>ИНН</b> 55599652</div>
+							<div class="line"><b>Адрес:</b> Преображенская ул. д.2. </div>
+							<div class="line"><b>Сфера деятельности:</b> Продажа товаров различного назначения</div>
+							<div class="line"><b>Должность:</b> менеджер   Телефон  555 55 55</div>
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="first">25.08.2013</td>
+					<td><div class="u-name"><a href="#">Игорь Агаларов</a></div></td>
+					<td><div class="mail"><a href="#">I@mail.ru</a></div></td>
+					<td>555 55 55</td>
+					<td>Рога и копыта</td>
+					<td>Здравствуйте, у меня воз </td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-1"><a class="answer-link" href="#">Ответить</a></div>
+								<div class="tools-2"><a class="view-link" href="#">Посмотреть текст ответа</a></div>
+								<div class="tools-3"><a href="#">Удалить</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="7">
+						<div class="u-name-drop">
+							<div class="line"><b>Название компании:</b>  "Рога и копыта"  <b>ИНН</b> 55599652</div>
+							<div class="line"><b>Адрес:</b> Преображенская ул. д.2. </div>
+							<div class="line"><b>Сфера деятельности:</b> Продажа товаров различного назначения</div>
+							<div class="line"><b>Должность:</b> менеджер   Телефон  555 55 55</div>
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		
+		
+	</div>
+
+</div>
+<!-- /Content -->
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+<div class="footer">
+	<div class="f-left">
+		<div>&copy; Ricoh , 2013. Все права защищены.</div>
+		<div>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></div>
+	</div>
+	<div class="f-right">
+		<div><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></div>
+		<span><a href="#">Карта сайта</a></span>
+	</div>
+	
+</div>
+</div>
+<!-- /Footer -->
+
+<div class="overlay" style="display:none;"></div>
+<div class="popup-box view">
+	<div class="close-popup"><a href="#"><img src="images/close.png" width="12" height="12" alt="#" /></a></div>
+	<div class="txt-box">
+		<h3>Ответ</h3>
+		<div class="top-tool">
+			<b>Табаев Илья</b> <a href="#">i@mail.ru</a> Компания <b>Сервис поддержки</b> Телефон <b>  555 55 55</b> 
+		</div>
+		<div class="top-text">
+			Презентационный материал ригиден как никогда. Партисипативное планирование, в рамках сегодняшних воззрений, упорядочивает креативный рекламный макет, не считаясь с затратами. Рекламное сообщество вполне выполнимо. 
+		</div>
+		<div class="scroll-pane">
+		<p>Изменение глобальной стратегии поддерживает социометрический целевой сегмент рынка, расширяя долю рынка. Показ баннера без оглядки на авторитеты уравновешивает институциональный процесс стратегического планирования, учитывая современные тенденции. Исходя из структуры пирамиды Маслоу, бизнес-план изменяет рекламоноситель, опираясь на опыт западных коллег.	</p>
+		<p>Внутрифирменная реклама концентрирует из ряда вон выходящий фирменный стиль, не считаясь с затратами. Организация слубы маркетинга директивно отталкивает инвестиционный продукт, опираясь на опыт западных коллег. Не факт, что организация службы маркетинга пока плохо нейтрализует из ряда вон выходящий процесс стратегического планирования, оптимизируя бюджеты. Медиамикс, согласно Ф.Котлеру, развивает культурный анализ зарубежного опыта, оптимизируя бюджеты. Рекламный макет, отбрасывая подробности, решительно позиционирует направленный маркетинг, учитывая современные тенденции. Создание приверженного покупателя без оглядки на авторитеты непосредственно искажает рекламный блок, работая над проектом.</p>
+		</div>		
+		<div class="btn"><input class="styler close-popup" type="button" value="Закрыть" /></div>
+	</div>		
+</div>
+
+<div class="popup-box answer">
+	<div class="close-popup"><a href="#"><img src="images/close.png" width="12" height="12" alt="#" /></a></div>
+	<div class="txt-box">
+		<h3>Ответ</h3>
+		<div class="top-tool">
+			<b>Табаев Илья</b> <a href="#">i@mail.ru</a> Компания <b>Сервис поддержки</b> Телефон <b>  555 55 55</b> 
+		</div>
+		<div class="top-text">
+			Презентационный материал ригиден как никогда. Партисипативное планирование, в рамках сегодняшних воззрений, упорядочивает креативный рекламный макет, не считаясь с затратами. Рекламное сообщество вполне выполнимо. 
+		</div>
+		<textarea class="styler">
+			
+		</textarea>
+		<div class="btn"><input class="styler" type="submit" value="Ответить" /> <input class="styler" type="reset" value="Отмена" /></div>
+	</div>		
+</div>
+
+</body>
+</html>

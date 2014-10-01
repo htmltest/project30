@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to ...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+BODY { behavior:url("js/csshover.htc");}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+
+<script type="text/javascript" src="js/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="js/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/ui/jquery.ui.datepicker.js"></script>
+<link rel="stylesheet" href="js/themes/base/jquery.ui.all.css" />
+<script>
+	$(function() {
+		$( "#datepicker1" ).datepicker();
+		$( "#datepicker2" ).datepicker();
+	});
+</script>
+
+
+<script type="text/javascript" src="js/my_script.js"></script>
+</head>
+<body>
+<div class="main-container">
+<!-- Header -->
+<div class="header">
+	<div class="logo"><a href="#"><img src="images/logo.png" alt="#" /></a></div>
+	<div class="user-box-cabinet">
+		<div class="user-img"><img src="images/ava01.jpg" width="41" height="41" /></div>
+		<div class="user-name">Чернышев Александр</div>
+		<div class="user-menu"><a href="#">Профиль</a> <span>|</span> <a href="#">Выход</a></div>
+		<div class="user-drop">
+			<em></em>
+			<ul>
+				<li><a href="#">Регистрация подажи</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">Сообщение в службу поддержки</a></li>
+				<li class="exit"><img src="images/ico01_.png"  alt="#" /> <a href="#">Выход</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mmenu">
+		<ul>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Форум</a></li>
+			<li><a href="#">Поддержка</a></li>
+			<li><a href="#">Материалы</a></li>
+			<li><a href="#">Новости и акции</a></li>
+		</ul>
+	</div>
+</div>
+<!-- /Header -->
+<!-- Content -->
+<div class="content">
+	<div class="leftbar">
+	<div class="left-menu">
+		<ul>
+			<li class="act"><a href="#">Заявки на регистрацию</a></li>
+			<li><a href="#">Регистрации продаж</a></li>
+			<li><a href="#">Список пользователей</a></li>
+			<li><a href="#">Заявки на поддержку</a></li>
+			<li><a href="#">Сообщения с обратной связи</a></li>
+			<li><a href="#">Личные сообщения</a></li>
+		</ul>
+	</div>
+	</div>
+	
+	<div  class="rightbar">
+		<div class="breadcrumbs"><a href="/">Ricoh</a> <span>//</span> <a href="#">Личный кабинет</a> <span>//</span> Заявки на регистрацию</div>
+		<h1>Заявки на регистрацию</h1>
+		
+		<div class="search-filter">
+			<form action="" method="">
+			<div class="line">
+			<label>Не ранее</label> <input type="text" id="datepicker1"> 
+			<label>не позднее</label> <input type="text" id="datepicker2"> 
+			<input type="text" value="ФИО" class="styler in01" />
+			</div>
+			
+			<div class="line">
+				<select>
+					<option>Страна</option>
+					<option>1</option>
+				</select>
+				
+				<select>
+					<option>Статус партнера</option>
+					<option>1</option>
+				</select>
+				<select>
+					<option>Статус продажи</option>
+					<option>1</option>
+				</select>
+				<input type="submit" value="Найти" class="styler" /> 
+			</div>
+			</form>
+		</div>		
+		
+		<div class="reg-sale">
+			<table>
+				<tr>
+					<th class="first">Дата</th>
+					<th>Статус</th>
+					<th>ФИО</th>
+					<th>e-mail</th>
+					<th>Страна</th>
+					<th>Статус <br />партнера</th>
+					<th>Баллов <br /> за продажу</th>
+					<th>Состав <br /> продажи</th>
+					<th class="last">Действие</th>
+				</tr>
+				<tr>
+					<td class="first">25.08.2013</td>
+					<td>засчитанная</td>
+					<td><div class="fio"><div>Игорь Агаларов<span></span></div></div></td>
+					<td><div class="mail"><a href="#">I@mail.ru</a></div></td>
+					<td>Россия</td>
+					<td>Бизнес партнер</td>
+					<td>27 400</td>
+					<td><div class="u-name"><a href="#">Копир RX50</a></div></td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-4"><a class="zachet" href="#">Засчитать продажу</a></div>
+								<div class="tools-3"><a class="canceled" href="#">Отказать</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="9">
+						<div class="u-name-drop">
+						<div class="clearfix">
+						<div class="u-name-drop-right">
+							<div><b>Кому продано:</b> частное лицо  </div>
+							<div><b>Название заказчика:</b><br />не заполнено  </div>
+							<div><b>Адрес установки:</b><br />не заполнено  </div>
+							<div><b>Для чего будет использоваться оборудование:</b><br />Бизнес</div>
+							<div><b>Почему клиент предпочел RICOH</b><br />известность</div>
+						</div>
+						
+						<div class="u-name-drop-left">
+							<table>
+								<tr>
+									<td>
+										<div class="sostav-name">Aficio MP W7140</div>
+										<div class="sostav-art">Артикул — 243232</div>
+										<div class="sostav-num">Серийный номер — D222ZA00080</div>
+									</td>
+									<td>
+										27 400 <sup>баллов</sup>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="sostav-name">Aficio MP W7140</div>
+										<div class="sostav-art">Артикул — 243232</div>
+										<div class="sostav-num">Серийный номер — D222ZA00080</div>
+									</td>
+									<td>
+										27 400 <sup>баллов</sup>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="sostav-name">Aficio MP W7140</div>
+										<div class="sostav-art">Артикул — 243232</div>
+										<div class="sostav-num">Серийный номер — D222ZA00080</div>
+									</td>
+									<td>
+										27 400 <sup>баллов</sup>
+									</td>
+								</tr>
+							</table>
+						</div>
+						</div>
+											
+						<div class="hide-name-drop"><a href="#">свернуть</a></div>
+					</div>						
+					</td>
+				</tr>
+				
+				<tr class="new">
+					<td class="first">25.08.2013</td>
+					<td>новая</td>
+					<td><div class="fio"><div>Илья Табаев<span></span></div></div></td>
+					<td><div class="mail"><a href="#">tabaev@mail.ru</a></div></td>
+					<td>Россия</td>
+					<td>ИТ-дистрибьютор</td>
+					<td>25 400</td>
+					<td><div class="u-name"><a href="#">Копир RX50</a></div></td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-4"><a class="zachet" href="#">Засчитать продажу</a></div>
+								<div class="tools-3"><a class="canceled" href="#">Отказать</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="9">
+						<div class="u-name-drop">
+							<div class="clearfix">
+							<div class="u-name-drop-right">
+								<div><b>Кому продано:</b> частное лицо  </div>
+								<div><b>Название заказчика:</b><br />не заполнено  </div>
+								<div><b>Адрес установки:</b><br />не заполнено  </div>
+								<div><b>Для чего будет использоваться оборудование:</b><br />Бизнес</div>
+								<div><b>Почему клиент предпочел RICOH</b><br />известность</div>
+							</div>
+							
+							<div class="u-name-drop-left">
+								<table>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+								</table>
+							</div>
+							</div>
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr class="fail">
+					<td class="first">25.08.2013</td>
+					<td>отказ</td>
+					<td width="100"><div class="fio"><div>Вассилий Николлаевич<span></span></div></div></td>
+					<td><div class="mail"><a href="#">tabaev@mail.ru</a></div></td>
+					<td>Россия</td>
+					<td>ИТ-дистрибьютор</td>
+					<td>25 400</td>
+					<td><div class="u-name"><a href="#">Копир RX50</a></div></td>
+					<td class="last">
+						<div class="tools-box">
+							<div class="tools-b"><a class="ico10" href="#"></a></div>
+							<div class="tools-drop">
+								<div class="ugol"></div>
+								<div class="tools-4"><a class="zachet" href="#">Засчитать продажу</a></div>
+								<div class="tools-3"><a class="canceled" href="#">Отказать</a></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="hide-block" colspan="9">
+						<div class="u-name-drop">
+							<div class="clearfix">
+							<div class="u-name-drop-right">
+								<div><b>Кому продано:</b> частное лицо  </div>
+								<div><b>Название заказчика:</b><br />не заполнено  </div>
+								<div><b>Адрес установки:</b><br />не заполнено  </div>
+								<div><b>Для чего будет использоваться оборудование:</b><br />Бизнес</div>
+								<div><b>Почему клиент предпочел RICOH</b><br />известность</div>
+							</div>
+							
+							<div class="u-name-drop-left">
+								<table>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="sostav-name">Aficio MP W7140</div>
+											<div class="sostav-art">Артикул — 243232</div>
+											<div class="sostav-num">Серийный номер — D222ZA00080</div>
+										</td>
+										<td>
+											27 400 <sup>баллов</sup>
+										</td>
+									</tr>
+								</table>
+							</div>
+							</div>
+												
+							<div class="hide-name-drop"><a href="#">свернуть</a></div>
+						</div>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		
+		
+	</div>
+
+</div>
+<!-- /Content -->
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+<div class="footer">
+	<div class="f-left">
+		<div>&copy; Ricoh , 2013. Все права защищены.</div>
+		<div>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></div>
+	</div>
+	<div class="f-right">
+		<div><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></div>
+		<span><a href="#">Карта сайта</a></span>
+	</div>
+	
+</div>
+</div>
+<!-- /Footer -->
+
+<div class="overlay" style="display:none;"></div>
+<div class="popup-box fail-p">
+	<div class="close-popup"><a href="#"><img src="images/close.png" width="12" height="12" alt="#" /></a></div>
+	<div class="txt-box">
+		<h3>Отказать</h3>
+		<div class="top-text">Отказ отправлен</div>
+		<div class="btn"><input class="styler close-popup" type="button" value="Закрыть" /></div>
+	</div>		
+</div>
+
+<div class="popup-box zachet-p">
+	<div class="close-popup"><a href="#"><img src="images/close.png" width="12" height="12" alt="#" /></a></div>
+	<div class="txt-box">
+		<h3>Отказать</h3>
+		<div class="line"><label>Укажите причину отказа</label><textarea class="styler"></textarea></div>
+		<div class="btn"><input class="styler close-popup" type="submit" value="Послать отказ" /> <input type="reset" value="Отмена" class="styler"</div>
+	</div>		
+</div>
+
+</body>
+</html>

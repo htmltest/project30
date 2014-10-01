@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to ...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+BODY { behavior:url("js/csshover.htc");}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/jquery.elastic.source.js"></script>
+<script type="text/javascript" src="js/my_script.js"></script>
+
+</head>
+<body>
+<div class="main-container">
+<!-- Header -->
+<div class="header">
+	<div class="logo"><a href="#"><img src="images/logo.png" alt="#" /></a></div>
+	<div class="h-right"><span class="enter-link"><img src="images/ico01.png"  alt="#" /> <a href="#">Вход</a></span> <a href="#">Регистрация нового партнёра</a>
+		<div class="enter-drop">
+			<em></em>
+			<div><input type="text" value="Логин" class="styler" /></div>
+			<div><input type="text" value="Пароль" class="styler" /></div>
+			<div><a href="#">Забыли пароль?</a></div>
+			<div><input type="submit" value="Войти" class="styler"  /></div>
+		</div>
+	</div>
+	<div class="ofsite"><a href="#">Официальный сайт</a></div>
+</div>
+<!-- /Header -->
+
+
+<div id="slider" class="sl-slider-wrapper">
+	<div class="sl-slider">
+		
+		<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-1"></div>
+				<h2>Digital Agenda</h2>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
+			</div>
+		</div>
+					
+		<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-2"></div>
+				<h2>Digital Agenda</h2>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>			</div>
+		</div>
+				
+		<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-3"></div>
+				<h2>Dum spiro, spero.</h2>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
+			</div>
+		</div>
+					
+		<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-4"></div>
+				<h2>Donna nobis pacem.</h2>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="nav-dots" class="nav-dots">
+		<span class="nav-dot-current"></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+<script type="text/javascript">
+$(function() {
+	var Page = (function() {
+		var $nav = $( '#nav-dots > span' ),
+			slitslider = $( '#slider' ).slitslider( {
+				onBeforeChange : function( slide, pos ) {
+					$nav.removeClass( 'nav-dot-current' );
+					$nav.eq( pos ).addClass( 'nav-dot-current' );
+				}
+			} ),
+			init = function() {
+				initEvents();
+			},
+			initEvents = function() {
+				$nav.each( function( i ) {
+					$( this ).on( 'click', function( event ) {
+						var $dot = $( this );
+						if( !slitslider.isActive() ) {
+							$nav.removeClass( 'nav-dot-current' );
+							$dot.addClass( 'nav-dot-current' );
+						}
+						slitslider.jump( i + 1 );
+						return false;
+					} );
+				} );
+			};
+			return { init : init };
+	})();
+	Page.init();
+});
+</script>
+
+<!-- Content -->
+<div class="content">
+
+<div class="news-list">
+	<h2>Новости для партнеров</h2>
+	<ul>
+		<li><span>02.04.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">МФУ Ricoh получили три награды независимой лаборатории BLI как лучшие продукты года</a></li>
+		<li><span>24.04.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh Aficio™SP 3500SF и SP 3510SF: новые высокопроизводительные и экономичные многофункциональные устройства «4 в 1» Ricoh Aficio™SP 3500SF и SP 3510SF: новые высокопроизводительные и экономичные многофункциональные устройства «4 в 1»</a></li>
+		<li><span>19.03.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh - платиновый спонсор международной конференции ON DEMAND Russia 2013</a></li>
+		<li><span>09.02.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh поддержит пострадавших от наводнения на Кубани</a></li>
+		<li><span>29.01.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Частное «облако» Ricoh получило награду 2013 Green IT Awards в номинации «Проект года»</a></li>
+	</ul>
+	<div class="all"><a href="#">Все новости и акции</a></div>
+</div>
+
+</div>
+<!-- /Content -->
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+<div class="footer">
+	<div class="f-left">
+		<div>&copy; Ricoh , 2013. Все права защищены.</div>
+		<div>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></div>
+	</div>
+	<div class="f-right">
+		<div><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></div>
+		<span><a href="#">Карта сайта</a></span>
+	</div>
+	
+</div>
+</div>
+<!-- /Footer -->
+</body>
+</html>
