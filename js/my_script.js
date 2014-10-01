@@ -183,13 +183,31 @@
 		});
 
 
-		jQuery('.scroll-pane').jScrollPane();
+		if ($('.scroll-pane').length > 0) {
+            $('.scroll-pane').jScrollPane();
+        }
 
 
 		// textarea
-		$('textarea').elastic();
+        if ($('textarea').length > 0) {
+            $('textarea').elastic();
+        }
 
 
+    $(window).bind('load resize scroll', function() {
+        if ($('.shop-box-menu').length > 0) {
+            if ($(window).scrollTop() > $('.shop-box-menu').offset().top) {
+                $('.shop-box-menu').addClass('fixed');
+            } else {
+                $('.shop-box-menu').removeClass('fixed');
+            }
+        }
+    });
+
+    $('.shop-box-menu a').click(function(e) {
+        $(window).scrollTop($($(this).attr('href')).offset().top - 70, 500);
+        e.preventDefault();
+    });
 
 
 

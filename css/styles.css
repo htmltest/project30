@@ -239,12 +239,15 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box-group-title {font-size:23px; line-height:23px; padding:0 0 24px 0}
 #pro {color:#d7152b}
 
-.shop-box-menu {font-size:23px; line-height:39px; padding:0 0 30px 0}
-.shop-box-menu ul {margin:0; padding:0; list-style:none; width:100%}
+.shop-box-menu {position:relative; font-size:23px; line-height:39px; padding:5px 0 35px 0; height:41px}
+.shop-box-menu-inner {position:relative}
+.shop-box-menu.fixed .shop-box-menu-inner {position:fixed; left:0; top:0; width:100%; height:41px; padding:5px 0; background:#fff; -webkit-box-shadow:0 0 13px rgba(0, 0, 0, .2); -moz-box-shadow:0 0 13px rgba(0, 0, 0, .2); box-shadow:0 0 13px rgba(0, 0, 0, .2); behavior: url(js/pie.htc)}
+.shop-box-menu ul {position:relative; padding:0; list-style:none; width:900px; margin:0 auto}
 .shop-box-menu ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .shop-box-menu ul li {float:left; margin:0 10px 0 0; padding:0; position:relative}
 .shop-box-menu ul li a {float:left; padding:0 20px; text-decoration:none; color:#000; border:1px solid #dadada; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; behavior: url(js/pie.htc)}
-.shop-box-menu ul li.active a {border-color:#000; font-size:27px}
+.shop-box-menu ul li:first-child a {font-size:27px}
+.shop-box-menu ul li a:hover {border-color:#000}
 .shop-box-menu ul li a.pro {color:#d7152b}
 
 .shop-box{}
@@ -253,16 +256,17 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table tr.shop-box-group-sep td {border-top:2px solid #5e5f62; padding:63px 0 0 0}
 .shop-box table tr.shop-box-group-sep+tr td {border-top:none; padding-top:0}
 .shop-box table tr:first-child td{padding-top:0;border:0}
-.shop-box table td:first-child{padding-right:30px}
+.shop-box table td:first-child{width:118px}
 .shop-box table td div.good-name{padding:0 0 10px 0;line-height:17px}
 .shop-box table td div.good-desc{padding:0 0 10px 0;line-height:17px}
 .shop-box table td div.good-txt{padding:0 0 10px 0;line-height:17px}
 .shop-box table td div.good-name span{vertical-align:top;color:#d7152b;margin-left:10px}
 .shop-box table td div.good-name a{color:#000;font-size:23px;text-decoration:none;line-height:normal}
 .shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right}
-.shop-box table td div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px}
-.shop-box table td div.ball-pro span {color:#d7152b}
-.shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0}
+.shop-box table td div.ball span{font-size:17px;vertical-align:top}
+.shop-box table td div.ball-pro span {color:#d7152b; display:inline-block; text-align:left; width:58px}
+.shop-box-2 table td div.ball-pro span {width:auto}
+.shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0; text-align:right}
 .shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
 
 .delivery-box{border-top:2px solid #5e5f62;padding-top:20px;clear:both}
@@ -294,13 +298,14 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .enter-drop input[type="text"]{width:180px;}
 .enter-drop input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
 
-.user-box{float:right;width:190px;padding:40px 0 20px 0;background:url(../images/arr01.png) 90% 69px no-repeat;cursor:pointer;position:relative}
+.user-box{float:right;width:190px; padding:40px 10px 20px 0; background:url(../images/arr02.png) no-repeat right 45px;  cursor:pointer;position:relative}
 .user-img{float:left;width:41px;height:41px;margin:0 10px 0 0}
-.user-name{color:#000;font-weight:bold;padding:3px 0}
-.user-ball{color:#000;padding-top:2px}
+.user-name{color:#000;font-weight:bold;padding:0 0 3px 0}
+.user-ball{color:#000;font-size:10px; line-height:14px}
+.user-ball.pro {color:#d7152b}
 .user-box:hover .user-drop{display:block}
 .user-drop{position:absolute;border:1px solid #e5e5e5;padding:15px 20px;background:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);top:88px;right:-10px;z-index:999;text-align:left;display:none}
-.user-drop em{position:absolute;background:url(../images/ugol.png) no-repeat;width:9px;height:6px;top:-6px;right:27px}
+.user-drop em{position:absolute;background:url(../images/ugol.png) no-repeat;width:9px;height:6px;top:-6px;right:9px}
 .user-drop ul{margin:0;padding:0;list-style-type:none}
 .user-drop ul li{line-height:20px;white-space:nowrap}
 .user-drop ul li.exit a{color:#5e5f62}
