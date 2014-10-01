@@ -2,8 +2,8 @@
 {
 			//form
 		$('.line select, .line input').styler();
-		
-		
+
+
     $('input:text, input:password').each(function(){
         var txtval = $(this).val();
         $(this).focus(function(){
@@ -19,9 +19,9 @@
             }
         });
     });
-		
-		
-		
+
+
+
 		// enter
 		$('.enter-link').each(function(i, item){
 			$(item).bind('mouseover', function(e){
@@ -29,27 +29,41 @@
 			 $('div.enter-drop').show();
 			})
 		});
-		
+
 		var n = 0;
 		$("div.enter-drop").bind("mouseenter",function(){
 			$(this).show();
 		}).bind("mouseleave",function(){
 			$(this).hide();
 		});
-			
-		
+
+
 		// delete
 		$('.del').click(function(e){
 				e.preventDefault();
-				$(this).parents(".serial-list li").animate({ opacity: 'hide' }, "slow", function() {$(this).detach()});
+				$(this).parents(".serial-list li").animate({ opacity: 'hide' }, "slow", function() {
+                    $(this).detach();
+                    var summBall = 0;
+                    var summBallPro = 0;
+                    $('.serial-list li').each(function() {
+                        var currBall = Number($(this).find('.ball em').html().replace(' ', ''));
+                        if ($(this).find('.ball-pro').length == 0) {
+                            summBall += currBall;
+                        } else {
+                            summBallPro += currBall;
+                        }
+                    });
+                    $('.serial-list-top-ball em').html(String(summBall).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                    $('.serial-list-top-ball.ball-pro em').html(String(summBallPro).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                });
 		});
-		
+
 		// message
 		$('.message-box span').click(function(){
 				$(this).parents(".message-box div").animate({ opacity: 'hide' }, "slow");
 		});
-		
-		
+
+
 		// faq
 		$(".support-full div.s-top").click(function(){
 			$(this).next("div.s-bot").slideToggle("slow")
@@ -58,8 +72,8 @@
 			$(this).siblings("div.s-top").removeClass("active");
 			return false;
 		});
-		
-		
+
+
 		// popup
 		$('.popup-link').click(function(){
 				$('.overlay').fadeIn('fast',function(){
@@ -71,8 +85,8 @@
 						$('.overlay').fadeOut('fast');
 				});
 		});
-	
-	
+
+
 		// reg
 		$(".u-name").each(function(i, item){
 			$(item).bind("click", function(e){
@@ -82,16 +96,16 @@
 			 $(".hide-block").hide();
 			 $(".hide-block").eq(i).show();
 			});
-		});	
-		
+		});
+
 		$(".hide-name-drop").click(function(e){
 			$("div.u-name").removeClass("act");
 			$(".hide-block").fadeOut("fast");
-		e.preventDefault();	
+		e.preventDefault();
 		});
-	
-		
-		// Ball		
+
+
+		// Ball
 		$(".history-b").each(function(i, item){
 			$(item).bind("click", function(e){
 			 e.preventDefault();
@@ -100,14 +114,14 @@
 			 $(".hide-block").hide();
 			 $(".hide-block").eq(i).show();
 			});
-		});	
-		
+		});
+
 		$(".hide-history-drop").click(function(e){
 			$("div.history-b").removeClass("act");
 			$(".hide-block").fadeOut("fast");
-		e.preventDefault();	
+		e.preventDefault();
 		});
-		
+
 		// More
 		$(".more-link").each(function(i, item){
 			$(item).bind("click", function(e){
@@ -117,23 +131,23 @@
 			 $(".more-txt").hide();
 			 $(".more-txt").eq(i).show();
 			});
-		});	
-		
+		});
+
 		//
 		$(".mlink").click(function(e){
 				$(this).hide();
 				$(this).next("div.mdrop").slideToggle("fast");
-			e.preventDefault();	
+			e.preventDefault();
 		});
-		
+
 		$(".hide-mdrop").click(function(e){
 				$(".mlink").show();
 				$(this).parents("div.mdrop").hide();
-			e.preventDefault();	
+			e.preventDefault();
 		});
-		
 
-		
+
+
 		// view-popup
 		$('.view-link').click(function(){
 				$('.overlay').fadeIn('fast',function(){
@@ -146,38 +160,38 @@
 						$('.answer').animate({'top':'250px'},500);
 				});
 		});
-		
+
 		// canceled-popup
 		$('.canceled').click(function(){
 				$('.overlay').fadeIn('fast',function(){
 						$('.zachet-p').animate({'top':'250px'},500);
 				});
 		});
-		
+
 		// zachet-popup
 		$('.zachet').click(function(){
 				$('.overlay').fadeIn('fast',function(){
 						$('.fail-p').animate({'top':'250px'},500);
 				});
 		});
-		
-		
+
+
 		$('.close-popup, .overlay').click(function(){
 				$('.answer, .view').animate({'top':'-2000px'},500,function(){
 						$('.overlay').fadeOut('fast');
 				});
 		});
-		
-				
+
+
 		jQuery('.scroll-pane').jScrollPane();
-	
-		
+
+
 		// textarea
 		$('textarea').elastic();
 
-		
-		
-		
+
+
+
 
 };
 

@@ -123,10 +123,14 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .pagebar ul li.act a{border:1px solid #cecece;cursor:text;color:#000;text-decoration:none;font-weight:bold}
 
 .profile-box{}
+
+.profile-box-top {width:100%; border-bottom:2px solid #000; padding:0 0 13px 0}
+.profile-box-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+
 .profile-left{width:435px;margin-right:30px;float:left}
 .profile-right{width:435px;float:left}
 
-.profile-top{position:relative;}
+.profile-top{position:relative; margin:15px 0 0 0}
 .profile-top .edit{position:absolute;top:5px;left:115px}
 .profile-top table{border-collapse:collapse;width:100%}
 .profile-top table td{vertical-align:top}
@@ -138,29 +142,36 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .profile-top div{line-height:17px;padding-bottom:10px}
 .profile-top div b{font-size:14px}
 
-.profile-left .reg{border:1px solid #e5e5e5;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;padding:20px;margin:15px 0 20px 0;}
-.profile-left .reg input{width:100%}
-.profile-left .reg div{padding:15px 0 0 0;text-align:center}
-.profile-left .reg div a{font-size:17px;}
-.profile-left .reg div img{vertical-align:middle;margin-left:5px}
+.profile-right .reg{border:1px solid #e5e5e5;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;padding:20px;margin:-10px 0 20px 0;}
+.profile-right .reg input{width:100%}
+.profile-right .reg div{padding:16px 0 14px 0;text-align:center}
+.profile-right .reg div.my-account {padding:5px 0 0 0}
+.profile-right .reg div.my-account-pro {font-size:24px; line-height:24px; color:#d7152b; padding:5px 0 34px 0}
+.profile-right .reg div a{font-size:12px;}
+.profile-right .reg div img{vertical-align:middle;margin-right:5px}
 
-.profile-info{padding:0 0 20px 0;color:#5a5a5d}
-.profile-info span{float:right}
+.profile-info{padding:24px 0 20px 0;color:#5a5a5d}
+.profile-info span{display:block}
 
 .order-list{clear:both;border-top:2px solid #000;padding:20px 0 0 0}
+.profile-right .order-list {border-top:none; padding:52px 0 0 0}
 .order-list h2{font-size:23px;font-weight:normal;padding-bottom:15px;}
-.order-list table{border-collapse:collapse;width:100%}
-.order-list table td{border-bottom:1px solid #ccc;padding:5px 0}
+.profile-right .order-list h2 {padding-bottom:24px}
+.order-list table{border-collapse:collapse;width:100%; border-bottom:2px solid #000}
+.order-list table td{border-top:1px solid #ccc;padding:5px 0}
+.order-list table tr:first-child td {border-top:2px solid #000}
 .order-list table td div.name {color:#000;font-size:17px;text-decoration:none}
 .order-list table td div.name span{display:block;color:#5a5a5d;font-style:italic;padding-top:3px;font-size:12px}
 .order-list table td div.ball{text-align:right;font-size:31px}
-.order-list table td div.ball span{font-size:17px;vertical-align:top}
+.order-list table td div.ball span{display:inline-block; width:58px; font-size:12px;vertical-align:top; text-align:left}
+.order-list table td div.ball-pro {color:#d7152b}
 .order-list .all{margin:20px 0;background:url(../images/ico08.png) 0 2px no-repeat;padding:0 0 0 20px}
 
 .my-account{font-size:35px;margin-top:-5px;letter-spacing:-1px;padding-bottom:20px}
 .my-account span{color:#d7152b}
 
 .my-message{border-top:2px solid #000;padding:20px 0 0 0}
+.profile-left .my-message {border-top:none; padding:52px 0 0 0}
 .my-message h2{font-size:23px;font-weight:normal;padding-bottom:5px;}
 .my-message table{border-collapse:collapse;width:100%}
 .my-message table td{border-bottom:1px solid #ccc;padding:14px 0 14px 15px;vertical-align:top}
@@ -169,6 +180,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .my-message .all{margin:20px 0;background:url(../images/ico07.png) 0 2px no-repeat;padding:0 0 0 20px}
 
 .forum-message{border-top:2px solid #5e5f62;padding:20px 0 0 0}
+.profile-left .forum-message {border-top:none; padding:46px 0 0 0}
 .forum-message h2{font-size:23px;font-weight:normal;padding-bottom:5px;}
 .forum-message ul{margin:0;padding:0;list-style-type:none}
 .forum-message ul li{padding-bottom:10px}
@@ -183,16 +195,26 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .serial-n input[type="text"]{width:400px;margin-right:30px}
 .serial-n input[type="submit"]{width:194px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important}
 
-.serial-list ul{margin:0;padding:0;list-style-type:none}
+.serial-list-top {width:100%; font-weight:bold; font-size:12px; line-height:16px; padding:27px 0 16px 0}
+.serial-list+.serial-list-top {padding:15px 0 6px 0}
+.serial-list-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.serial-list-top-title {float:left}
+.serial-list-top-values {float:right; text-align:right}
+.serial-list-top-ball span {display:inline-block; width:45px; text-align:left}
+.serial-list-top-ball em {font-style:normal}
+.serial-list-top-values .ball-pro {color:#d7152b}
+
+.serial-list ul{margin:0;padding:0;list-style-type:none; border-bottom:1px solid #e5e5e5}
 .serial-list ul li{padding:20px 50px 20px 0;border-top:1px solid #e5e5e5;clear:both;position:relative}
-.serial-list ul li:first-child{border:0}
 .serial-list ul li img{float:left;margin:0 20px 20px 0}
 .serial-list ul li div.name{padding-top:10px;font-size:17px;}
 .serial-list ul li div.name span{display:block;padding-top:2px;font-size:12px}
 .serial-list ul li div.name div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
 .serial-list ul li div.ball{float:right;width:200px;text-align:right;font-size:31px;padding-top:10px}
-.serial-list ul li div.ball span{font-size:17px;vertical-align:top}
+.serial-list ul li div.ball em {font-style:normal}
+.serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px}
 .serial-list ul li div.ball div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
+.serial-list ul li div.ball-pro {color:#d7152b}
 .serial-list ul li .del{position:absolute;top:30px;right:0}
 .serial-list ul li .del a{background:url(../images/delete.png) 0 0 no-repeat;width:24px;height:24px;display:block}
 .serial-list ul li .del a:hover{background:url(../images/delete.png) 0 -116px no-repeat;}
@@ -200,7 +222,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .sale-box .reg{border:1px solid #e4e4e4;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;padding:20px;margin:15px 0 20px 0}
 .sale-box .reg input{width:100%}
 
-.sale-select{border-top:1px solid #e4e4e4;padding-top:30px}
+.sale-select{padding-top:30px}
 .sale-select table{border-collapse:collapse;width:100%;}
 .sale-select table label{display:block;font-weight:bold;padding-bottom:4px}
 .sale-select table td{vertical-align:top;padding:0 0 10px 30px}
@@ -214,9 +236,22 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .sale-select .line .jq-selectbox .select {width:262px;background:url(../images/select02.png) no-repeat}
 .sale-select .line .jq-selectbox .dropdown {width:315px}
 
+.shop-box-group-title {font-size:23px; line-height:23px; padding:0 0 24px 0}
+#pro {color:#d7152b}
+
+.shop-box-menu {font-size:23px; line-height:39px; padding:0 0 30px 0}
+.shop-box-menu ul {margin:0; padding:0; list-style:none; width:100%}
+.shop-box-menu ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.shop-box-menu ul li {float:left; margin:0 10px 0 0; padding:0; position:relative}
+.shop-box-menu ul li a {float:left; padding:0 20px; text-decoration:none; color:#000; border:1px solid #dadada; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; behavior: url(js/pie.htc)}
+.shop-box-menu ul li.active a {border-color:#000; font-size:27px}
+.shop-box-menu ul li a.pro {color:#d7152b}
+
 .shop-box{}
 .shop-box table{border-collapse:collapse;width:100%}
 .shop-box table td{vertical-align:top;padding:20px 0 10px 0;border-top:1px solid #e3e3e3}
+.shop-box table tr.shop-box-group-sep td {border-top:2px solid #5e5f62; padding:63px 0 0 0}
+.shop-box table tr.shop-box-group-sep+tr td {border-top:none; padding-top:0}
 .shop-box table tr:first-child td{padding-top:0;border:0}
 .shop-box table td:first-child{padding-right:30px}
 .shop-box table td div.good-name{padding:0 0 10px 0;line-height:17px}
@@ -224,8 +259,10 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table td div.good-txt{padding:0 0 10px 0;line-height:17px}
 .shop-box table td div.good-name span{vertical-align:top;color:#d7152b;margin-left:10px}
 .shop-box table td div.good-name a{color:#000;font-size:23px;text-decoration:none;line-height:normal}
-.shop-box table td div.ball{font-size:31px;white-space:nowrap}
-.shop-box table td div.ball span{font-size:17px;vertical-align:top}
+.shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right}
+.shop-box table td div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px}
+.shop-box table td div.ball-pro span {color:#d7152b}
+.shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0}
 .shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
 
 .delivery-box{border-top:2px solid #5e5f62;padding-top:20px;clear:both}
@@ -439,7 +476,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 
 
 .sl-slider {position: absolute;top: 0;left: 0;}
-.sl-slide, .sl-slides-wrapper, .sl-slide-inner {position: absolute;width: 100%;height: 100%;top: 0;left: 0;} 
+.sl-slide, .sl-slides-wrapper, .sl-slide-inner {position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
 .sl-slide {	z-index: 1;}
 .sl-content-slice {overflow: hidden;position: absolute;opacity : 1;}
 .sl-slide-horizontal .sl-content-slice {width: 100%;height: 50%;left: -200px;}
