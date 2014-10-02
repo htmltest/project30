@@ -159,10 +159,11 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .profile-right .order-list h2 {padding-bottom:24px}
 .order-list table{border-collapse:collapse;width:100%; border-bottom:2px solid #000}
 .order-list table td{border-top:1px solid #ccc;padding:5px 0}
+.order-list table td:first-child {padding-right:10px}
 .order-list table tr:first-child td {border-top:2px solid #000}
 .order-list table td div.name {color:#000;font-size:17px;text-decoration:none}
 .order-list table td div.name span{display:block;color:#5a5a5d;font-style:italic;padding-top:3px;font-size:12px}
-.order-list table td div.ball{text-align:right;font-size:31px}
+.order-list table td div.ball{text-align:right;font-size:31px; white-space:nowrap}
 .order-list table td div.ball span{display:inline-block; width:58px; font-size:12px;vertical-align:top; text-align:left}
 .order-list table td div.ball-pro {color:#d7152b}
 .order-list .all{margin:20px 0;background:url(../images/ico08.png) 0 2px no-repeat;padding:0 0 0 20px}
@@ -210,7 +211,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .serial-list ul li div.name{padding-top:10px;font-size:17px;}
 .serial-list ul li div.name span{display:block;padding-top:2px;font-size:12px}
 .serial-list ul li div.name div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
-.serial-list ul li div.ball{float:right;width:200px;text-align:right;font-size:31px;padding-top:10px}
+.serial-list ul li div.ball{float:right;width:200px;text-align:right;font-size:31px;padding-top:10px; white-space:nowrap}
 .serial-list ul li div.ball em {font-style:normal}
 .serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px}
 .serial-list ul li div.ball div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
@@ -262,11 +263,11 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table td div.good-txt{padding:0 0 10px 0;line-height:17px}
 .shop-box table td div.good-name span{vertical-align:top;color:#d7152b;margin-left:10px}
 .shop-box table td div.good-name a{color:#000;font-size:23px;text-decoration:none;line-height:normal}
-.shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right}
+.shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right; white-space:nowrap}
 .shop-box table td div.ball span{font-size:17px;vertical-align:top}
 .shop-box table td div.ball-pro span {color:#d7152b; display:inline-block; text-align:left; width:58px}
 .shop-box-2 table td div.ball-pro span {width:auto}
-.shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0; text-align:right}
+.shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0; text-align:right; white-space:nowrap}
 .shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
 
 .delivery-box{border-top:2px solid #5e5f62;padding-top:20px;clear:both}
