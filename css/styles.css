@@ -258,9 +258,9 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table tr.shop-box-group-sep+tr td {border-top:none; padding-top:0}
 .shop-box table tr:first-child td{padding-top:0;border:0}
 .shop-box table td:first-child{width:118px}
-.shop-box table td div.good-name{padding:0 0 10px 0;line-height:17px}
-.shop-box table td div.good-desc{padding:0 0 10px 0;line-height:17px}
-.shop-box table td div.good-txt{padding:0 0 10px 0;line-height:17px}
+.shop-box table td div.good-name{padding:0 10px 10px 0;line-height:17px}
+.shop-box table td div.good-desc{padding:0 10px 10px 0;line-height:17px}
+.shop-box table td div.good-txt{padding:0 10px 10px 0;line-height:17px}
 .shop-box table td div.good-name span{vertical-align:top;color:#d7152b;margin-left:10px}
 .shop-box table td div.good-name a{color:#000;font-size:23px;text-decoration:none;line-height:normal}
 .shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right; white-space:nowrap}
@@ -268,6 +268,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table td div.ball-pro span {color:#d7152b; display:inline-block; text-align:left; width:58px}
 .shop-box-2 table td div.ball-pro span {width:auto}
 .shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0; text-align:right; white-space:nowrap}
+.shop-box-order {text-align:right; padding:0 68px 0 0}
 .shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
 
 .delivery-box{border-top:2px solid #5e5f62;padding-top:20px;clear:both}
