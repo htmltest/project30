@@ -164,7 +164,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .order-list table td div.name {color:#000;font-size:17px;text-decoration:none}
 .order-list table td div.name span{display:block;color:#5a5a5d;font-style:italic;padding-top:3px;font-size:12px}
 .order-list table td div.ball{text-align:right;font-size:31px; white-space:nowrap}
-.order-list table td div.ball span{display:inline-block; width:58px; font-size:12px;vertical-align:top; text-align:left}
+.order-list table td div.ball span{display:inline-block; width:58px; font-size:12px;vertical-align:top; text-align:left; padding:2px 0 0 0}
 .order-list table td div.ball-pro {color:#d7152b}
 .order-list .all{margin:20px 0;background:url(../images/ico08.png) 0 2px no-repeat;padding:0 0 0 20px}
 
@@ -213,7 +213,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .serial-list ul li div.name div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
 .serial-list ul li div.ball{float:right;width:200px;text-align:right;font-size:31px;padding-top:10px; white-space:nowrap}
 .serial-list ul li div.ball em {font-style:normal}
-.serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px}
+.serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px; padding:2px 0 0 0}
 .serial-list ul li div.ball div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
 .serial-list ul li div.ball-pro {color:#d7152b}
 .serial-list ul li .del{position:absolute;top:30px;right:0}
@@ -264,9 +264,9 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .shop-box table td div.good-name span{vertical-align:top;color:#d7152b;margin-left:10px}
 .shop-box table td div.good-name a{color:#000;font-size:23px;text-decoration:none;line-height:normal}
 .shop-box table td div.ball{font-size:31px;white-space:nowrap; text-align:right; white-space:nowrap}
-.shop-box table td div.ball span {font-size:17px; vertical-align:top}
+.shop-box table td div.ball span {font-size:17px; vertical-align:top; position:relative; top:2px}
 .shop-box table td div.ball-pro span {color:#d7152b}
-.shop-box table td div.ball-text {font-size:17px; padding:0 0 0 10px}
+.shop-box table td div.ball-text {font-size:17px; padding:2px 0 0 10px}
 .shop-box table td div.ball-text-pro {color:#d7152b}
 .shop-box table td div.ball-balance {font-size:17px; color:#808080; padding:2px 0 0 0; text-align:right; white-space:nowrap}
 .shop-box-order {text-align:right}
