@@ -200,9 +200,10 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .serial-list+.serial-list-top {padding:15px 0 6px 0}
 .serial-list-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .serial-list-top-title {float:left}
-.serial-list-top-values {float:right; text-align:right}
-.serial-list-top-ball span {display:inline-block; width:45px; text-align:left}
-.serial-list-top-ball em {font-style:normal}
+.serial-list-top-values {float:right; text-align:left; display:table}
+.serial-list-top-ball {display:table-row}
+.serial-list-top-ball span {display:table-cell; vertical-align:top; text-align:left}
+.serial-list-top-ball em {display:table-cell; vertical-align:top; padding:0 5px 0 0; text-align:right; font-style:normal}
 .serial-list-top-values .ball-pro {color:#d7152b}
 
 .serial-list ul{margin:0;padding:0;list-style-type:none; border-bottom:1px solid #e5e5e5}
@@ -213,7 +214,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .serial-list ul li div.name div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
 .serial-list ul li div.ball{float:right;width:200px;text-align:right;font-size:31px;padding-top:10px; white-space:nowrap}
 .serial-list ul li div.ball em {font-style:normal}
-.serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:58px; padding:2px 0 0 0}
+.serial-list ul li div.ball span{font-size:17px;vertical-align:top; display:inline-block; text-align:left; width:72px; padding:2px 0 0 0}
 .serial-list ul li div.ball div{color:#5a5a5d;font-style:italic;font-size:12px;padding-top:10px}
 .serial-list ul li div.ball-pro {color:#d7152b}
 .serial-list ul li .del{position:absolute;top:30px;right:0}
@@ -241,7 +242,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 #pro {color:#d7152b}
 
 .shop-box-menu {position:relative; font-size:23px; line-height:39px; padding:5px 0 35px 0; height:41px}
-.shop-box-menu-inner {position:relative}
+.shop-box-menu-inner {position:relative; z-index:2}
 .shop-box-menu.fixed .shop-box-menu-inner {position:fixed; left:0; top:0; width:100%; height:41px; padding:5px 0; background:#fff; -webkit-box-shadow:0 0 13px rgba(0, 0, 0, .2); -moz-box-shadow:0 0 13px rgba(0, 0, 0, .2); box-shadow:0 0 13px rgba(0, 0, 0, .2); behavior: url(js/pie.htc)}
 .shop-box-menu ul {position:relative; padding:0; list-style:none; width:900px; margin:0 auto}
 .shop-box-menu ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -864,3 +865,77 @@ td.hide-block{padding:0 0 0 0 !important;vertical-align:top;display:none}
 .support table tr.green td .fio a{color:#389911}
 .support table tr.green td .answ{text-align:center;color:#389911}
 .support table tr.green td .respond a{color:#d7152b}
+
+.user-box-reseller {background-position:right 51px}
+.user-box-reseller .user-name {padding-top:6px}
+
+.profile-box-reseller .profile-top .edit {top:3px; left:62px; display:block; width:24px; height:18px; padding:6px 0 0 0; text-align:center; line-height:0; background:#fff; -webkit-border-radius:12px; -moz-border-radius:12px; border-radius:12px; behavior:url(js/pie.htc)}
+.profile-box-reseller .profile-top .edit img {vertical-align:top}
+.profile-box-reseller .profile-top table td:first-child {width:90px; padding-right:15px}
+.profile-box-reseller .profile-top span.ava {width:90px; min-height:90px}
+.profile-box-reseller .profile-top span.ava img {width:90px; min-height:90px}
+
+.profile-box-reseller .profile-box-top {display:table; padding:0; border:none; margin-bottom:32px}
+.profile-box-reseller .profile-box-top .profile-left {float:none; display:table-cell; width:250px; padding:0 44px 0 0; vertical-align:top; margin:0}
+
+.profile-center {display:table-cell; vertical-align:top; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; padding:0 20px; width:269px; text-align:center}
+.profile-center img {vertical-align:middle}
+
+.reg-reseller {display:table; width:100%; text-align:center; margin:0 0 24px 0}
+.reg-reseller-item {display:table-cell; vertical-align:top; width:50%; color:#d7152b; font-size:17px; line-height:24px; padding:0 0 4px 0}
+.reg-reseller-item span {display:block; font-size:34px; line-height:34px; padding:0 0 5px 0}
+.reg-reseller-item:first-child {color:#000; border-right:1px solid #e3e3e3}
+.profile-box-reseller input.styler[type="submit"] {width:100%; font-size:15px; margin-bottom:16px; line-height:33px; -webkit-box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75); -moz-box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75); box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75)}
+
+.profile-box-reseller .profile-box-top .profile-right {display:table-cell; vertical-align:top; padding:0 0 0 15px; float:none; width:auto}
+.profile-box-reseller .order-list {padding:0}
+.profile-box-reseller .order-list h2 {margin-top:-4px; font-size:17px; padding-bottom:17px}
+.profile-box-reseller .order-list .all{float:right; margin:4px 0 0 0}
+.profile-box-reseller .order-list table{border-bottom:none}
+.profile-box-reseller .order-list table td{border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+.profile-box-reseller .order-list table tr:first-child td {border-top:1px solid #ccc}
+
+.profile-bottom {width:100%; border-top:2px solid #000; padding:27px 0 0 0}
+.profile-bottom:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.profile-bottom .profile-left {width:435px; margin:0}
+.profile-bottom .profile-left .my-message {padding:0}
+.profile-bottom .profile-right {width:425px; float:right}
+.profile-bottom .profile-right .forum-message {padding:0; border:none}
+.profile-bottom .profile-right .forum-message h2 {padding-bottom:18px}
+
+.profile-special {border-top:2px solid #000; padding:0 0 31px 0}
+.profile-special-top {width:100%}
+.profile-special-top:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.profile-special-title {float:left; padding:29px 0 0 0}
+.profile-special-title-text {font-size:23px; line-height:23px}
+.profile-special-title-date {font-size:12px; line-height:14px; padding:9px 0 0 0}
+.profile-special-count {float:right; font-size:23px; line-height:23px; color:#d7152b; padding:29px 0 0 0}
+.profile-special-wrap {margin:0 -44px; position:relative}
+.profile-special table {width:100%; font-size:12px; line-height:14px; margin:19px 0 0 0; border-collapse:separate; border-spacing:44px 0}
+.profile-special td {vertical-align:top; border-top:1px solid #cdced2; padding:5px 0; width:20%}
+.profile-special tr:first-child td {border-top:none}
+.profile-special td div {width:100%; border-top:1px solid #cdced2; display:table}
+.profile-special td div:first-child {border-top:none}
+.profile-special td i {float:left; max-width:50%; font-style:normal}
+.profile-special td b {max-width:50%; float:right}
+
+.shop-box-menu-reseller {font-size:15px; line-height:36px; height:38px}
+.shop-box-menu.fixed .shop-box-menu-reseller .shop-box-menu-inner {height:38px}
+.shop-box-menu-reseller ul li a {padding:0; width:137px; color:#5f5f5f; border:1px solid #e3e3e3; text-align:center}
+.shop-box-menu ul li:first-child a {font-size:15px}
+.shop-box-menu ul li a:hover {color:#000}
+.shop-box-menu ul li a.active {color:#fff; border:none; line-height:38px; width:139px; background:#d7152b; -webkit-box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75); -moz-box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75); box-shadow:inset 0 -4px 0 rgba(121, 30, 41, .75)}
+.shop-box-menu ul li a.active:hover {background:#eb001b}
+
+.shop-box-group-title-reseller {font-size:27px; color:#d7152b}
+.shop-box-reseller {border-bottom:2px solid #5e5f62; margin-bottom:39px}
+.shop-box-reseller-place {text-align:center; font-size:12px; line-height:16px}
+.shop-box-reseller-place span {display:block; font-size:23px; line-height:23px}
+.shop-box-reseller table td {vertical-align:middle; width:96px; padding:17px 0 25px 0}
+.shop-box-reseller table tr:first-child td {padding-top:17px}
+.shop-box-reseller table td+td {width:110px}
+.shop-box-reseller table td+td+td {width:auto; padding-left:30px; padding-right:95px}
+
+.shop-box-reseller table tr.shop-box-reseller-top td {background:#d7152b; color:#fff; border-top-color:#fff}
+.shop-box table tr.shop-box-reseller-top td div.good-name a {color:#fff}
+.shop-box table tr.shop-box-reseller-top td:first-child+td a {display:table-cell; width:110px; height:110px; background:#fff; text-align:center; vertical-align:middle; position:relative; -webkit-border-radius:55px; -moz-border-radius:55px; border-radius:55px; behavior:url(js/pie.htc)}

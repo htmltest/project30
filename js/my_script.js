@@ -201,6 +201,14 @@
             } else {
                 $('.shop-box-menu').removeClass('fixed');
             }
+            $('.shop-box-menu a').each(function() {
+                var curLink = $(this);
+                var curBlock = $(curLink.attr('href'));
+                if (curBlock.offset().top < $(window).scrollTop() + $(window).height() / 2) {
+                    $('.shop-box-menu a.active').removeClass('active');
+                    curLink.addClass('active');
+                }
+            });
         }
     });
 
