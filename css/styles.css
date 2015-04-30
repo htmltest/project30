@@ -938,4 +938,8 @@ td.hide-block{padding:0 0 0 0 !important;vertical-align:top;display:none}
 
 .shop-box-reseller table tr.shop-box-reseller-top td {background:#d7152b; color:#fff; border-top-color:#fff}
 .shop-box table tr.shop-box-reseller-top td div.good-name a {color:#fff}
-.shop-box table tr.shop-box-reseller-top td:first-child+td a {display:table-cell; width:110px; height:110px; background:#fff; text-align:center; vertical-align:middle; position:relative; -webkit-border-radius:55px; -moz-border-radius:55px; border-radius:55px; behavior:url(js/pie.htc)}
+.shop-box table tr.shop-box-reseller-top td:first-child+td a {display:table-cell; width:110px; height:110px; background:#fff; text-align:center; vertical-align:middle; position:relative}
+.shop-box table tr.shop-box-reseller-top td:first-child+td a:after {content:""; display:block; width:110px; height:110px; position:absolute; left:0; top:0; background:url(../images/shop-box-reseller-top.png)}
+
+.sale-box .message-ok,
+.sale-box .message-error {width:auto; background-position:right top}
